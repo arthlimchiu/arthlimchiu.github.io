@@ -5,15 +5,26 @@
 
   <body>
 
-    {% include header.html %}
+    <!-- {% include header.html %} -->
 
-    <main class="page-content" aria-label="Content">
+    <!-- <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
       </div>
-    </main>
+    </main> -->
 
-    {% include footer.html %}
+    {% include me.html %}
+
+    <!-- {% include footer.html %} -->
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'assets/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+        });
+    </script>
 
   </body>
 
