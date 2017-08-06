@@ -63,7 +63,7 @@
     height: 40%;
 }
 
-.portfolio-label {
+.section-label {
     text-align: center;
 }
 
@@ -92,4 +92,20 @@
     opacity: 0.2;
     font-size: 20px;
     font-style: italic;
+}
+
+.technology-icon {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: auto;
+}
+
+.technology-name {
+    text-align: center;
+}
+
+.technology-others-label {
+    text-align: center;
+    opacity: 0.7;
 }
