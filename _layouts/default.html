@@ -5,7 +5,7 @@
 
   <body>
 
-    <!-- {% include header.html %} -->
+    {% include header.html %}
 
     {% include me.html %}
 
@@ -18,6 +18,7 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/bootstrap.min.js"></script>
     <script type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/particles.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/smooth-scroll.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script>
         particlesJS.load('particles-js', 'assets/particles.json', function() {
@@ -33,6 +34,11 @@
         sr.reveal(document.getElementById('ripe_mango_p2'), { duration: 5000 }, 50);
         sr.reveal(document.getElementById('ripe_mango_p3'), { duration: 6000 }, 50);
         sr.reveal(document.getElementById('ripe_mango_p4'), { duration: 7000 }, 50);
+    </script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1500,
+        });
     </script>
 
   </body>
